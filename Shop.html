@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <script type="text/javascript" src="scripts/main.js" defer></script>
+    <script type="text/javascript" src="scripts/shop.js" defer></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+
+    <title>
+        Olivier Répare | Spécialiste de la clim' et de la résine spécial
+    </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+
+    <meta name="title" content="Olivier Répare | Spécialiste de la clim' et de la résine spécial">
+    <meta name="description"
+        content="Olivier répare ou remplace votre clim' ou votre pare prise si l'impact est plus petit qu'une pièce de 2€ partout en France. 0€ avance de frais (franchise non comprise). Site non officiel et non affilié à Carglass !">
+    <meta name="keywords" content="carglass, olivier, ytp fr">
+    <meta name="language" content="FR">
+
+    <meta property="og:title" content="🚗 Carglass Répare | Spécialiste de la clim' et de la résine spécial">
+    <meta property="og:description"
+        content="Olivier répare ou remplace votre clim' ou votre pare prise si l'impact est plus petit qu'une pièce de 2€ partout en France. 0€ avance de frais (franchise non comprise). Site non officiel et non affilié à Carglass !">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://olivier-repare.rf.gd/Shop.html">
+    <meta property="og:image" content="http://olivier-repare.rf.gd/img/Background.png">
+    <meta name="theme-color" content="#cf0000">
+
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body>
+    <nav class="menu"></nav>
+
+    <h2 class="titleShop center">Boutique en ligne</h2>
+
+    <main>
+        <div class="popup" id="popup">
+            <span onclick="closeProduct();" class="x">⨉</span>
+            <img id="img" draggable="false">
+            <h2 id="title"></h2>
+            <p id="description"></p>
+            <p id="price"></p>
+            <input type="number" id="input" min="1" max="999" value="1">
+            <input type="button" class="purchase"
+                onclick="alert('Nous somme désolé mais enfaîte on a la flemme de pousser la blague plus loin pour cette page, voilà voilà')"
+                value="Acheter !">
+        </div>
+
+        <div class="container">
+            <div onclick="viewProduct('Autocollant &#34;On Met La Clim\' ?&#34;', 'img/Sticker.png', 9.99, 0);"
+                class="product">
+                <img src="img/Sticker.png" draggable="false">
+                <h3>Autocollant</h3>
+                <p><span class="description">Un sticker reprennant celui de Carglass avec le texte "On met la clim' ?",
+                        une phrase mitique d'Olivier, prononcée à partir de la 9ème seconde de la publicité originale.
+                        Il n'en existe actuellement que 154 215 120 exemplaires, et après cela il n'y en aura plus car
+                        flemme d'en faire plus. Meilleur qualité d'impression, mais une fois collé, c'est finito et on
+                        ne peut plus le décoler sans perdre sa qualité de colle.</span></p>
+                <span class="moreInfos">Cliquez pour plus d'informations !</span>
+                <span class="price">9,99€</span>
+            </div>
+
+            <div onclick="viewProduct('Un impact sur votre pare-prise', 'img/Impact.png', 14.99, 1);" class="product">
+                <img src="img/Impact.png" draggable="false">
+                <h3>Impact</h3>
+                <p><span class="description">Très probablement le meilleur moyen pour que je puisse venir chez vous,
+                        mettre la clim', puis réparer votre pare-brise sans franchise ! Enfin, tant que l'impact est
+                        plus petit qu'une pièce de 2 euros, et que vous avez l'assurance brise-glace, sinon ça ne va
+                        pas aller ! Si vous voulez le Frédo de Carglass, vous verrez avec lui.</span></p>
+                <span class="moreInfos">Cliquez pour plus d'informations !</span>
+                <span class="price">14,99€</span>
+            </div>
+
+            <div onclick="viewProduct('Résine spécial', 'img/Résine.png', 34.99, 2);" class="product">
+                <img src="img/Résine.png" draggable="false">
+                <h3>Résine spécial</h3>
+                <p><span class="description">Un incontournable dans le "Olivier Lore" comme on dit, nan on ne dit pas ça
+                        ? Bon pas grave, tout ce que je peux dire c'est que c'est une réplique exacte utilisée dans la
+                        publicité, et grâce à elle, vous pourrez faire l'Olivier de chez Carglass, chez vous !</span>
+                </p>
+                <span class="moreInfos">Cliquez pour plus d'informations !</span>
+                <span class="price">34,99€</span>
+            </div>
+
+            <div onclick="viewProduct('Camion d\'Olivier', 'img/Camion.png', 9999999.99, 3);" class="product">
+                <img src="img/Camion.png" draggable="false">
+                <h3>Camion d'Olivier</h3>
+                <p><span class="description">L'iconique, l'unique, l'inoubliable, la crème de la crème, la cerise sur le
+                        gâteau, le camion officiel d'Olivier !!! Uniquement les vrais fans le veulent, et c'est pour ça
+                        qu'il est à un prix vraiment très raisonnable pour sa qualité, son histoire et sa rareté.
+                    </span></p>
+                <span class="moreInfos">Cliquez pour plus d'informations !</span>
+                <span class="price">9 999 999,99€</span>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
